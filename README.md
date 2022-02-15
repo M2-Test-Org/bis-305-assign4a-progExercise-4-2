@@ -25,3 +25,12 @@ The output from the console should be:
 ```html
 The message is too long
 ```
+
+### Here is a flowchart for the logic:  
+```mermaid
+flowchart LR
+	A[Display 'Enter your short message >> '\n in the console] --> B[Get input from the user.];
+  B --> C{Is the length of\n the text greater\n than 140 characters?};
+	C -- Yes --> D[Display 'The message is too long'];
+	C -- No --> E[Display 'The message is okay'];
+```
