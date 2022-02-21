@@ -24,16 +24,16 @@ public class Assign4ProgExercise4_2Tests
         //members for reading from a stream.
         //Use case 1
         var textInput = "Once more unto the breach, dear friends, once more";
-        
+
         var input = new StringReader(textInput);
         Console.SetIn(input);
-        
+
         Twitter.Main();
 
         //use a string writer to format the expected outcome
         var expectedOutcome = new StringBuilder();
-        expectedOutcome.Append("Enter your short message >> ");
-        expectedOutcome.AppendLine("The message is okay");
+        expectedOutcome.AppendLine("Enter your short message >>");
+        expectedOutcome.AppendLine("The message is okay.");
 
         //  Write("Enter your short message >> ");
         // message = ReadLine();
@@ -67,16 +67,16 @@ public class Assign4ProgExercise4_2Tests
         //members for reading from a stream.
         //Use case 1
         var textInput = "Once more unto the breach, dear friends, once more; Or close the wall up with our English dead. In peace there's nothing so becomes a man As modest stillness and humility: But when the blast of war blows in our ears, Then imitate the action of the tiger;";
-        
+
         var input = new StringReader(textInput);
         Console.SetIn(input);
-        
+
         Twitter.Main();
 
         //use a string writer to format the expected outcome
         var expectedOutcome = new StringBuilder();
-        expectedOutcome.Append("Enter your short message >> ");
-        expectedOutcome.AppendLine("The message is too long");
+        expectedOutcome.AppendLine("Enter your short message >>");
+        expectedOutcome.AppendLine("The message is too long.");
 
         //  Write("Enter your short message >> ");
         // message = ReadLine();
